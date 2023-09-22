@@ -1,0 +1,300 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #B31312; /* Warna latar belakang navbar */
+    color: #fff; /* Warna teks */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+/* Logo styling */
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Search styling */
+.search {
+     /* Bagian pencarian akan memanjang dan mengisi sisa ruang */
+    display: flex;
+    margin: 0 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.search img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.search input {
+    flex: 1;
+    width: 40vw;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.cart button {
+        background: transparent;
+        cursor: pointer;
+        transition: background 0.3s;
+        border: none;
+        position: relative;
+        top: 5px;
+}
+.cart img {
+    width: 30px;
+}
+
+.kategori button {
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    margin-top: 10px;  
+}
+
+.kategori button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.container-nav {
+    display: flex;
+}
+
+/* Button styling */
+.buttons button {
+    background-color: #2b3d4f; /* Warna tombol Login dan Daftar */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container-main {
+    background: #323a43;
+    height: 78vh;
+}
+
+/* Mengatur tampilan form */
+form {
+    max-width: 300px; /* Lebar maksimum formulir */
+    margin: 0 auto; /* Memusatkan formulir di tengah halaman */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Mengatur tampilan label pada form */
+form label {
+    display: block; /* Membuat label menjadi blok */
+    text-align: left; /* Rata kiri */
+    font-weight: bold;
+    margin-bottom: 5px; /* Jarak bawah antara label dan input */
+}
+
+/* Mengatur tampilan input pada form */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%; /* Lebar input 100% dari wadahnya */
+    padding: 10px;
+    margin-bottom: 10px; /* Jarak bawah antara input */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Mengatur tampilan checkbox pada form */
+form input[type="checkbox"] {
+    margin-right: 5px; /* Jarak antara checkbox dan teks */
+}
+
+/* Mengatur tampilan tombol pada form */
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Mengatur tampilan div warning */
+#warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.header {
+    height: 100vh;
+}
+
+.header h1, p {
+    color: #fff;
+}
+
+h1, #description {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 70px;
+}
+
+#lapaq-title {
+    color: #ff5353;
+    font-size: 93px; 
+}
+
+.bg-header {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: blur(1px) brightness(70%);
+}
+
+#description {
+    font-size: 30px;
+    color: rgb(223, 223, 223);
+}
+
+.title-header {
+    padding-top: 40vh;
+    position: relative;
+}
+
+.con-link {
+    display: flex;
+    justify-content: center;
+}
+
+.con-link img {
+    height: 25px;
+    margin-top: 5px;
+}
+
+ #link {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-section-about,
+.footer-section-links,
+.footer-section-contact {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.footer-section-about h2,
+.footer-section-links h2,
+.footer-section-contact h2 {
+    color: #ff9900;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section-about p,
+.footer-section-links ul,
+.footer-section-contact ul {
+    color: #fff;
+}
+
+.footer-section-about p {
+    font-size: 14px;
+}
+
+.footer-section-links ul {
+    list-style-type: disc;
+}
+
+.footer-section-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-section-contact ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section-contact span {
+    font-weight: bold;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+
+    .buttons button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar Responsive</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">LapaQ</a>
+        </div>
+        <div class="container-nav">
+        <div class="kategori">
+            <button class="kategori-btn">Kategori</button>
+         </div>
+        <div class="search">
+            <img src="icon-search.png" alt="search">
+            <input type="text" placeholder="Cari">
+        </div>
+        <div class="cart">
+            <button class="cart-btn"><img src="cart.svg" alt=""></button>
+        </div>
+        </div>
+        <div class="buttons">
+            <button class="login">Login</button>
+            <button class="daftar">Daftar</button>
+    </div>
+    </nav>
+    <div class="header">
+        <img class="bg-header" src="lapaq-header.jpeg" alt="background-lapaq">
+    <div class="title-header">
+        <h1>SELAMAT DATANG DI <strong id="lapaq-title">LapaQ</strong></h1>
+        <p id="description">LapaQ adalah sebuah website yang menyediakan berbagai kebutuhan anda</p>
+    </div>
+    </div>
+    <div class="container-main">
+        <div class="link-form">
+        <div class="con-link">
+            <img src="skilvul-logo.png" alt="skilvul">
+            <a id="link" href="https://skilvul.com">Skilvul</a>
+        </div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+          
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+          
+            <label for="zip-code">Zip Code:</label>
+            <input type="number" id="zip-code" name="zip-code"><br><br>
+          
+            <label id="check" for="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+            <input type="checkbox" id="status" name="status"><br><br>
+          
+            <button type="submit" id="submit-form">Submit</button>
+          
+            <div id="warning"></div>
+          </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section-about">
+                <h2>About Us</h2>
+                <p>Belanja dengan aman, cepat, mudah dimana saja.</p>
+            </div>
+            <div class="footer-section-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-contact">
+                <h2>Hubungi Kami</h2>
+                <ul>
+                    <li><span>Email:</span> lapaq@example.com</li>
+                    <li><span>Telp:</span> +123 456 1234</li>
+                    <li><span>Alamat:</span> jl. Naik Haji, Bekasi, Jawa Barat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 LapaQ. All Rights Reserved.
+        </div>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
