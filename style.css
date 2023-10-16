@@ -9,8 +9,6 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-/* Navbar styling */
 .navbar {
     background-color: #B31312; /* Warna latar belakang navbar */
     color: #fff; /* Warna teks */
@@ -21,7 +19,7 @@ body {
     height: 60px;
 }
 
-/* Logo styling */
+
 .logo a {
     text-decoration: none;
     color: #fff;
@@ -30,8 +28,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-
-/* Search styling */
 .search {
      /* Bagian pencarian akan memanjang dan mengisi sisa ruang */
     display: flex;
@@ -66,18 +62,25 @@ body {
 .cart img {
     width: 30px;
 }
-
+.kategori {
+    height: auto;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .kategori button {
     background: transparent;
     color: white;
     cursor: pointer;
     transition: background 0.3s;
     border: none;
-    padding: 0px;
+    padding: px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: medium;
-    margin-top: 10px;  
+    height: auto;
+    width: auto;
 }
 
 .kategori button:hover {
@@ -87,8 +90,6 @@ body {
 .container-nav {
     display: flex;
 }
-
-/* Button styling */
 .buttons button {
     background-color: #2b3d4f; /* Warna tombol Login dan Daftar */
     color: #fff;
@@ -99,21 +100,98 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-
+.shop-list {
+    width: 100%;
+    height: 70px;
+    background-color: #c5c5c5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.shop-list b {
+    font-size: 25px;
+}
+.container-prod {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-wrapper {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: solid 3px rgb(114, 114, 114);
+    border-radius: 10px;
+}
+.desc h3,
+.desc p {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.desc p {
+    height: 79px;
+    width: 100%;
+}
+.buy {
+    width: 100%;
+    height: 75px;
+    background-color: #d6d6d6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0 0 5px 5px;
+}
+.buy button,
+.buy span {
+    margin: 0 30px;
+}
+.buy button {
+    padding: 5px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    background: #B31312;
+    color: aliceblue;
+    cursor: pointer;
+}
+#buy:hover {
+    background-color: #43484e;
+}
+.buy span {
+    font-weight: 500;
+}
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
 .container-main {
-    background: #323a43;
-    height: 78vh;
+    background: #666666;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Mengatur tampilan form */
 form {
-    max-width: 300px; /* Lebar maksimum formulir */
-    margin: 0 auto; /* Memusatkan formulir di tengah halaman */
+    width: 80vw;
+    height: 100%;
     padding: 20px;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    /* margin: 20px; */
+    margin-bottom: 90px;
 }
 
 /* Mengatur tampilan label pada form */
@@ -134,23 +212,25 @@ form input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-
-/* Mengatur tampilan checkbox pada form */
-form input[type="checkbox"] {
-    margin-right: 5px; /* Jarak antara checkbox dan teks */
+.setuju {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.setuju #status {
+    margin-top: 10px;
 }
 
 /* Mengatur tampilan tombol pada form */
 form button[type="submit"] {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 200px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
-/* Mengatur tampilan div warning */
 #warning {
     color: red;
     font-weight: bold;
@@ -174,7 +254,7 @@ h1, #description {
 }
 
 #lapaq-title {
-    color: #ff5353;
+    color: #fe2e2e;
     font-size: 93px; 
 }
 
@@ -182,7 +262,7 @@ h1, #description {
     height: 100%;
     width: 100%;
     position: absolute;
-    filter: blur(1px) brightness(70%);
+    filter: blur(1px) brightness(15%);
 }
 
 #description {
@@ -194,32 +274,33 @@ h1, #description {
     padding-top: 40vh;
     position: relative;
 }
-
 .con-link {
     display: flex;
     justify-content: center;
+    margin: 30px 0;
 }
-
 .con-link img {
     height: 25px;
     margin-top: 5px;
 }
-
- #link {
+#link {
     text-decoration: none;
     text-align: center;
     padding-left: 5px;
     font-size: 30px;
-    color: aliceblue;
+    color: white;
 }
-
+.main-prod {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
 footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
 }
 
 .footer-content {
@@ -279,7 +360,7 @@ footer {
 
 
 /* Responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -297,4 +378,4 @@ footer {
         margin-top: 10px;
         margin-left: 0;
     }
-}
+} */

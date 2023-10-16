@@ -1,5 +1,3 @@
-// Tambahkan kode JavaScript kalian di file ini
-// Tambahkan kode JavaScript kalian di file ini
 function handleGetFormData() {
     const formData = {
         name: document.getElementById('name').value,
@@ -10,12 +8,6 @@ function handleGetFormData() {
     };
     return formData;
 }
-
-document.getElementById('submit-form').addEventListener('click', function (event) {
-    event.preventDefault(); // Hindari pengiriman formulir standar
-    const formData = handleGetFormData();
-    console.log(formData); // Lakukan sesuatu dengan formData (misalnya, kirim ke server)
-});
 
 function isNumber(inputString) {
     return !isNaN(inputString);
@@ -28,26 +20,30 @@ function checkboxIsChecked() {
 
 function validateFormData(formData) {
     if (!formData) {
-        return false
+        return false;
     }
     if (isNaN(formData.zipCode)) {
-        return false
+        return false;
     }
     if (!document.getElementById('status').checked) {
-        return false
-    } return true
+        return false;
+    }
+    return true;
 }
-
-let validasiData = document.getElementById('submit-form')
-validasiData.addEventListener('submit', ()=> {submit()})
 
 function submit(event) {
-    let dataValidasi = validateFormData(handleGetFormData())
+    const dataValidasi = validateFormData(handleGetFormData());
+    const warningElement = document.getElementById('warning');
+
     if (dataValidasi === false) {
-        return document.getElementById('warning').innerHTML = 'Periksa form anda sekali lagi'
+        warningElement.innerHTML = '<span>Periksa form anda sekali lagi</span>';
+        event.preventDefault(); // Prevent form submission if data is invalid
+    } else {
+        warningElement.innerHTML = ''; // Clear the warning message if data is valid
     }
-    else {
-        return document.getElementById('warning').innerHTML = ''
-    }
-    event.preventDefault()
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", submit);
+});
